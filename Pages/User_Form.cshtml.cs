@@ -11,5 +11,11 @@ namespace RPC_Authentication
         public void OnGet()
         {
         }
+
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("/Index");
+            
+        }
     }
 }
