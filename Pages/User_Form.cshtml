@@ -9,20 +9,22 @@
 <form method="post">
 	<section class = "infoContainer">
 
-		<input class="textInput" type="text" asp-for="Username" placeholder="Username" />
-		<input class="textInput" type="text" asp-for="Password" placeholder="Password" />
-		<input class="textInput" type="text" asp-for="FirstName" placeholder="Firstname" />
-		<input class="textInput" type="text" asp-for="LastName" placeholder="Lastname" />
-		<input class="textInput" type="date" asp-for="Birthdate" placeholder="Birthdate" />
-
 		<label class = "labelInput">User name: </label>
-		<label class = "labelInput">Password: </label>
+		<input class="textInput" type="text" asp-for="Username" placeholder="Username" />
+
+		<label class = "labelInput">Password: </label>		
+		<input class="textInput" type="password" asp-for="Password" placeholder="Password" />
+		
 		<label class = "labelInput">First name: </label>
+		<input class="textInput" type="text" asp-for="FirstName" placeholder="Firstname" />
+		
 		<label class = "labelInput">Last name: </label>
+		<input class="textInput" type="text" asp-for="LastName" placeholder="Lastname" />
+		
 		<label class = "labelInput">Birth date: </label>
-
-		<button type="submit">Submit</button>
-
+		<input class="textInput" type="date" asp-for="Birthdate" placeholder="Birthdate" />
 	</section>
+		<button id = "registerButton" type="submit">Sign in</button>
+
 
 </form>
