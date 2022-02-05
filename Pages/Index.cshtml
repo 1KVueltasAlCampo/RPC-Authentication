@@ -5,7 +5,21 @@
 }
     <link rel="stylesheet" href="~/css/Styles.css" />
 
-<section class = "infoContainer">
-    <input class = "textInput" type="text" placeholder="Username" />
+<section class = "basicPane">
+    <section class = "inputContainer">
+    <label class="labelInput">User name</label>
+    <input id= "loginUserName" class = "textInput" type="text" placeholder="Username" />
+
+    <label class="labelInput">Password</label>
+    <input id = "loginPassword" class = "textInput" type="password" placeholder="Password" />
+ <button>Log in</button>
+    <label>
+        Not a member yet?
+        <a id= "loginCreateNewUser" asp-area="" asp-page="/User_Form">Sign up</a>
+    </label>    
+</section>
+
+   
+
 </section>
 

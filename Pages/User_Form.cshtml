@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="~/css/Styles.css" />
 
 <form method="post">
-	<section class = "infoContainer">
+	<section class = "basicPane">
+		<section class = "inputContainer">
 
 		<label class = "labelInput">User name: </label>
-		<input class="textInput" type="text" asp-for="Username" placeholder="Username" />
+		<input id = "registerUserName" class="textInput" type="text" asp-for="Username" placeholder="Username" />
 
 		<label class = "labelInput">Password: </label>		
-		<input class="textInput" type="password" asp-for="Password" placeholder="Password" />
+		<input id = "registerPassword" class="textInput" type="password" asp-for="Password" placeholder="Password" />
 		
 		<label class = "labelInput">First name: </label>
-		<input class="textInput" type="text" asp-for="FirstName" placeholder="Firstname" />
+		<input id = "registerFirstName" class="textInput" type="text" asp-for="FirstName" placeholder="Firstname" />
 		
 		<label class = "labelInput">Last name: </label>
-		<input class="textInput" type="text" asp-for="LastName" placeholder="Lastname" />
+		<input id = "registerLastName" class="textInput" type="text" asp-for="LastName" placeholder="Lastname" />
 		
 		<label class = "labelInput">Birth date: </label>
-		<input class="textInput" type="date" asp-for="Birthdate" placeholder="Birthdate" />
+		<input id = "registerBirthDate" class="textInput" type="date" asp-for="Birthdate" placeholder="Birthdate" />
 	</section>
 		<button id = "registerButton" type="submit">Sign in</button>
+	</section>
 
 
 </form>

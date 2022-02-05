@@ -11,13 +11,11 @@
 
 
 
-.infoContainer {
-    display: grid;
+.basicPane {
     gap: 20px;
     padding: 30px;
     margin: 30px;
-    grid-template-columns: 1fr 2fr;
-
+   
     background: rgba( 255, 255, 255, 0.45 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
@@ -26,6 +24,14 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.inputContainer {
+    gap: 20px;
+    display: grid;
+    margin-bottom: 30px;
+
+    grid-template-columns: 1fr 2fr;
+
+}
 
 .textInput {
     border-radius: 10px;
@@ -40,20 +46,16 @@
     max-width: 200px;
 }
 
-#registerButton {
+button {
     display: block;
     margin-left: auto;
     margin-right: auto;
 
     padding-left: 10px;
     padding-right: 10px;
-
     border: none !important;
-
     border-radius: 12px;
     color: var(--secondart_text);
-    
-
     -webkit-border-radius: 83px;
     border-radius: 83px;
     background: #faae2b;
@@ -61,6 +63,11 @@
     box-shadow: 8px 8px 15px #af7a1e, 8px 8px 15px #ffe238;
 }
 
-footer{
+#registerButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
     margin-top: 70%
 }
