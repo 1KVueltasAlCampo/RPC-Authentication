@@ -3,21 +3,9 @@
 @{
     ViewData["Title"] = "Home page";
 }
+    <link rel="stylesheet" href="~/css/Styles.css" />
 
-<div class="text-center">
-    <h1 class="display-4">Hello World</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-{
-    <b>Name: </b> @Html.TextBox("Name"," " , new {placeholder="Jhon Doe"}) 
-}
-@using (Html.BeginForm("Index", "Home", FormMethod.Post))
-{
-        <b>Password: </b> @Html.TextBox("Password", null, null, new { type = "password", style="color:red", id="claveFachera"})
-    ;
-}
+<section class = "infoContainer">
+    <input class = "textInput" type="text" placeholder="Username" />
+</section>
 
-<asp:Button runat="server" id="btnLogin" Text="Log In" OnClick="btnLogin_Click" />
-
-
-</div>

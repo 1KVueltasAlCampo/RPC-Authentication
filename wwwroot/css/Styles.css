@@ -1,0 +1,21 @@
+﻿*{
+    font-family: Consolas;
+}
+
+.infoContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+.textInput{
+    border-radius: 10px;
+    grid-column: 2;
+}
+
+.labelInput{
+    grid-column: 1;
+}
