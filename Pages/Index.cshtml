@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home page";
 }
     <link rel="stylesheet" href="~/css/Styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
 <section class = "basicPane">
     <form method="login">
@@ -14,20 +15,16 @@
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Password"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn-primary">Login</button>
-            </form>
+    <label class="labelInput">Password</label>
+    <input id = "loginPassword" class = "textInput" type="password" placeholder="Password" />
+ <button>Log in <i style = "font-size:20px;" class="bi bi-door-open-fill"></i> </button>
     <label>
         Not a member yet?
-        <a id= "loginCreateNewUser" asp-area="" asp-page="/UsersList/UserForm">Sign up</a>
+        <a id= "loginCreateNewUser" asp-area="" asp-page="/UsersList/UserForm">Sign up <i style = "font-size:20px;" class="bi bi-person-plus-fill"></i></a> 
     </label>    
 </section>
 
-   
+    
 
 </section>
 
