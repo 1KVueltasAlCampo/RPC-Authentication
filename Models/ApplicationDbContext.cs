@@ -7,7 +7,10 @@ namespace RPC_Authentication.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
         }
+
         public DbSet<UserRPC> UserRPC { get; set; }
+
+        
     }
 
 }
