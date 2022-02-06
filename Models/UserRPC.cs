@@ -16,5 +16,7 @@ namespace RPC_Authentication.Models
         public String Firstname { get; set; }
 
         public String Lastname { get; set; }
+
+        public DateTime Birthdate { get; set; }
     }
 }

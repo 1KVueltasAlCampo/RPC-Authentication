@@ -1,0 +1,24 @@
+﻿@page
+@model RPC_Authentication.Pages.UsersList.UserFormModel
+@{
+}
+
+<form method="post">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		<label asp-for="UserRPC.Username"></label>
+		<input asp-for="UserRPC.Username" class="form-control" />
+		<span asp-validation-for="UserRPC.Username" class="TextReader-danger"></span>
+		<label asp-for="UserRPC.Password" class="form-control"></label>
+		<input asp-for="UserRPC.Password" class="form-control" />
+		<span asp-validation-for="UserRPC.Password" class="TextReader-danger"></span>
+		<label asp-for="UserRPC.Firstname" class="form-control"></label>
+		<input asp-for="UserRPC.Firstname" class="form-control" />
+		<span asp-validation-for="UserRPC.Firstname" class="TextReader-danger"></span>
+		<label asp-for="UserRPC.Lastname" class="form-control"></label>
+		<input asp-for="UserRPC.Lastname" class="form-control" />
+		<span asp-validation-for="UserRPC.Lastname" class="TextReader-danger"></span>
+		<label asp-for="UserRPC.Birthdate" class="form-control"></label>
+		<input asp-for="UserRPC.Birthdate" class="form-control" />
+		<span asp-validation-for="UserRPC.Birthdate" class="TextReader-danger"></span>
+</form>
+<input type="submit" value="Crear" class="btn btn-primary"
