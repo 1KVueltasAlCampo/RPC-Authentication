@@ -2,23 +2,28 @@
 @model RPC_Authentication.Pages.UsersList.UserFormModel
 @{
 }
+    <link rel="stylesheet" href="~/css/Styles.css" />
 
 <form method="post">
 	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-		<label asp-for="UserRPC.Username"></label>
-		<input asp-for="UserRPC.Username" class="form-control" />
-		<span asp-validation-for="UserRPC.Username" class="TextReader-danger"></span>
-		<label asp-for="UserRPC.Password" class="form-control"></label>
-		<input asp-for="UserRPC.Password" class="form-control" />
-		<span asp-validation-for="UserRPC.Password" class="TextReader-danger"></span>
-		<label asp-for="UserRPC.Firstname" class="form-control"></label>
-		<input asp-for="UserRPC.Firstname" class="form-control" />
-		<span asp-validation-for="UserRPC.Firstname" class="TextReader-danger"></span>
-		<label asp-for="UserRPC.Lastname" class="form-control"></label>
-		<input asp-for="UserRPC.Lastname" class="form-control" />
-		<span asp-validation-for="UserRPC.Lastname" class="TextReader-danger"></span>
-		<label asp-for="UserRPC.Birthdate" class="form-control"></label>
-		<input asp-for="UserRPC.Birthdate" class="form-control" />
-		<span asp-validation-for="UserRPC.Birthdate" class="TextReader-danger"></span>
+		<section class = "basicPane">
+			<section class = "inputContainer">
+				<label class = "labelInput" asp-for="UserRPC.Username"></label>
+				<input class = "textInput" asp-for="UserRPC.Username" class="form-control" />
+				<span asp-validation-for="UserRPC.Username" class="TextReader-danger"></span>
+				<label class = "labelInput" asp-for="UserRPC.Password" class="form-control"></label>
+				<input class = "textInput" asp-for="UserRPC.Password" class="form-control" />
+				<span asp-validation-for="UserRPC.Password" class="TextReader-danger"></span>
+				<label class = "labelInput" asp-for="UserRPC.Firstname" class="form-control"></label>
+				<input class = "textInput" asp-for="UserRPC.Firstname" class="form-control" />
+				<span asp-validation-for="UserRPC.Firstname" class="TextReader-danger"></span>
+				<label class = "labelInput" asp-for="UserRPC.Lastname" class="form-control"></label>
+				<input class = "textInput" asp-for="UserRPC.Lastname" class="form-control" />
+				<span asp-validation-for="UserRPC.Lastname" class="TextReader-danger"></span>
+				<label class = "labelInput" asp-for="UserRPC.Birthdate" class="form-control"></label>
+				<input class = "textInput" asp-for="UserRPC.Birthdate" class="form-control" />
+				<span asp-validation-for="UserRPC.Birthdate" class="TextReader-danger"></span>
+			</section>
+		</section>
 </form>
-<input type="submit" value="Crear" class="btn btn-primary"
+<button type="submit" value=""> Register </button>

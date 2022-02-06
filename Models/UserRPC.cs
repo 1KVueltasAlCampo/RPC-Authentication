@@ -17,6 +17,7 @@ namespace RPC_Authentication.Models
 
         public String Lastname { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
     }
 }

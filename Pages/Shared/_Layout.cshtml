@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RPC_Authentication.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Styles.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -24,10 +24,8 @@
                         <li class="nav-item" style="margin-right:5%;">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Log in</a>
                          <li class="nav-item"style="margin-right:5%;">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/User_Form">About</a>
-                            <li class="nav-item"style="margin-right:5%;">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/UsersList/UserForm">Register</a>
-                        </li>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/UsersList/UserForm">Sign up</a>
+                         </li>
 
                     </ul>
                 </div>
@@ -41,6 +39,18 @@
     </div>
 
     <footer class="border-top footer text-muted">
+       <section class = "container creditsSection">
+        <label class = "credits"> Developers: </label>
+        
+        <br />
+        <ul>
+            <li>
+                <a href = "https://github.com/KennetSanchez">Kennet Santiago Sánchez Roldán</a><i class="fab fa-github"></i>
+            <li> 
+                <a href = "https://github.com/1KVueltasAlCampo">Juan David Cruz Garcia</a><i class="fab fa-github"></i>
+            </li>
+        </ul>
+       </section>
         <div class="container">
             &copy; 2022 - RPC_Authentication - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
